@@ -6,9 +6,6 @@ import numpy as np
 
 expected_files = sorted(glob('expected_output/*/*.json'))
 
-if len(expected_files) < 24:
-    raise ValueError('Expected 24 files, but only %d files exist' % len(expected_files))
-
 output_files = sorted(glob('output/*/*.json'))
 if len(output_files) == 0:
     raise ValueError('Output has no files')

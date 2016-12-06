@@ -1,21 +1,30 @@
-**Integration Testing:** [![CircleCI](https://circleci.com/gh/ReproNim/simple_workflow.svg?style=svg)](https://circleci.com/gh/ReproNim/simple_workflow)
+## Imaging data science and sharing team challenge
 
-**Note:** This demo is intended to run on OS X and Linux environments.
+This code base runs a neuroimaging workflow but it has a bug...
 
-#### Information queried from NITRC-IR and stored in a google spreadsheet
-https://docs.google.com/spreadsheets/d/11an55u9t2TAf0EV2pHN0vOd8Ww2Gie-tHp9xGULh_dA
+### The task
+Troubleshoot the workflow to find the bug, fix it. Generate a passed circleci build either in this repository or a cloned repository.
 
-#### Setup your own environment
+
+#### In order to run the workflow
 1. Make sure FSL is available in your environment and accessible from the command line.
 
 2. If you already have a `conda` environment, please follow the detailed steps below. 
 
-3. If you do not have a conda environment, the following step will download and install a Python 2 conda environment with the appropriate python packages. 
+3. 
+    
+a) If you do not have a conda environment, the following step will download and install a Python 2 conda environment with the appropriate python packages. 
 
 ```bash
 curl -Ok https://raw.githubusercontent.com/ReproNim/simple_workflow/master/Simple_Prep.sh
 source Simple_Prep.sh
 ```
+
+or
+
+b) Follow the instructions in the "Detailed steps for setting up environment" section below.
+
+
 
 #### Run the demo
 
@@ -64,3 +73,6 @@ conda env create -f environment.yml
 source activate bh_demo
 pip install https://github.com/satra/prov/archive/enh/rdf-1.x.zip
 ```
+
+#### Hint
+HPC?
