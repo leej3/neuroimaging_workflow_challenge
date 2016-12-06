@@ -8,12 +8,7 @@ This code base runs a neuroimaging workflow but it has a bug... Troubleshoot the
 
 #### In order to run the workflow:
 
-```bash
-python run_demo_workflow.py --key 11an55u9t2TAf0EV2pHN0vOd8Ww2Gie-tHp9xGULh_dA
-python check_output.py
-```
-
-To run on one subject you can do:
+To run on one subject (which is all that circleci tests):
 ```bash
 python run_demo_workflow.py --key 11an55u9t2TAf0EV2pHN0vOd8Ww2Gie-tHp9xGULh_dA -n 1
 ```
