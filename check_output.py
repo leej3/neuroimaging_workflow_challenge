@@ -39,7 +39,7 @@ for filename in output_files:
         in_dict_mod = {}
         for k, v in in_dict.items():
             if isinstance(v, list):
-                for idx, value in enumerate(v):
+                for idx, value in enumerate(v) :
                     in_dict_mod["%s_%s" % (k, outputmap[idx])] = value
             else:
                 in_dict_mod[k] = v
@@ -61,7 +61,6 @@ else:
     print('Outputs are not close enough. Printing difference')
     print(df_diff)
 
-import rdflib as rl
 query = """
 PREFIX nipype: <http://nipy.org/nipype/terms/>  
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -75,13 +74,13 @@ SELECT DISTINCT ?platform ?fslversion
 """
 prov_files = sorted(glob('workflow_prov*.trig'))
 
-g = rl.ConjunctiveGraph()
+g = rdflib.ConjunctiveGraph()
 g.parse(prov_files[0], format='trig')
 res = g.query(query)  
 print("Original platform: {}".format(str(res.bindings[0]['platform'])))
 print("Original FSL version: {}".format(str(res.bindings[0]['fslversion'])))
 
-g = rl.ConjunctiveGraph()
+g = rdflib.ConjunctiveGraph()
 g.parse(prov_files[-1], format='trig')
 res = g.query(query)  
 for val in res.bindings:
