@@ -2,7 +2,9 @@ Integration testing: [![CircleCI](https://circleci.com/gh/leej3/neuroimaging_wor
 
 ## Imaging data science and sharing team challenge
 
-This code base runs a neuroimaging workflow but it has a bug... Troubleshoot the workflow to find the bug, fix it. Generate a passed circleci build either in this repository or a cloned repository.
+This code base was written to demonstrate a reproducable workflow. The script downloads some MRI data from a shared data repository, performs a some processing, then compares the output against a set a refence files to determine if the output matches.
+
+For the purpose of this exercise, we've broken the code such that integration testing fails (as indicated by the badge on this page).  Your task is to troubleshoot the workflow to find the bug and try to fix it. Generate a passed circleci build (which should turn the badge above from red to green) either in this repository or a cloned repository. Remember we're interested in equally in your approach and your process as much or more than getting to the solution. Please log your approach and your process in the google doc.
 
 
 
