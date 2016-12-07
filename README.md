@@ -1,3 +1,5 @@
+Integration testing: [![CircleCI](https://circleci.com/gh/leej3/neuroimaging_workflow_challenge.svg?style=shield&circle-token=4725463b472ac9c556a53d80d28035d749ba5c3c)](https://circleci.com/gh/leej3/neuroimaging_workflow_challenge)
+
 ## Imaging data science and sharing team challenge
 
 This code base runs a neuroimaging workflow but it has a bug... Troubleshoot the workflow to find the bug, fix it. Generate a passed circleci build either in this repository or a cloned repository.
