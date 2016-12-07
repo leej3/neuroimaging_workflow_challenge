@@ -1,7 +1,6 @@
 import json
 import os
 from glob import glob
-import pandas as pd
 import numpy as np
 
 expected_files = sorted(glob('expected_output/*/*.json'))
