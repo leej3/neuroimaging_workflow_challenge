@@ -15,9 +15,9 @@ conda config --add channels conda-forge
 # Get the repo and Create the specific versioned python environment                                                            
 echo "Get the repo and Create the specific versioned python environment"                                                       
                                                                                                                                
-curl -OksSL https://github.com/ReproNim/simple_workflow/archive/master.zip                                                      
+curl -OksSL https://github.com/agt24/workflow_challenge/archive/master.zip                                                      
 unzip master.zip                                                                                                               
-cd simple_workflow-master                                                                                                      
+cd workflow_challenge                                                                                                      
 conda env create -f environment.yml                                                                                            
 source activate bh_demo                                                                                                        
 pip install https://github.com/satra/prov/archive/enh/rdf-1.x.zip
