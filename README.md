@@ -2,7 +2,7 @@ Integration testing: [![CircleCI](https://circleci.com/gh/agt24/workflow_challen
 
 ## Imaging data science and sharing team challenge
 
-This code base was written to demonstrate a reproducible workflow. The script downloads some MRI data from a shared data repository, performs a some processing, then compares the output against a set of reference files to determine if the output matches.
+This code base was written to demonstrate a reproducible workflow. The script downloads some MRI data from a shared data repository, performs some processing, then compares the output against a set of reference files to determine if the output matches.
 
 For the purpose of this exercise, we've broken the code such that integration testing fails (as indicated by the badge on this page).  Your task is to troubleshoot the workflow to find the bug and try to fix it. Generate a passed circleci build (which should turn the badge above from red to green). Ideally this passed build would be using your own circleci account in a forked repository, but an easier way would be to push the fix directly to the master branch in this repo. Remember we're interested equally in your approach and your process as much or more than getting to the solution. Please log your approach and your process in the google doc.
 
@@ -71,7 +71,7 @@ curl -OsSL https://github.com/agt24/workflow_challenge/archive/master.zip
 unzip master.zip
 cd workflow_challenge
 conda env create -f environment.yml
-source activate bh_demo
+source activate workflow_env
 pip install https://github.com/satra/prov/archive/enh/rdf-1.x.zip
 ```
 

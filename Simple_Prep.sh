@@ -19,5 +19,5 @@ curl -OksSL https://github.com/agt24/workflow_challenge/archive/master.zip
 unzip master.zip                                                                                                               
 cd workflow_challenge                                                                                                      
 conda env create -f environment.yml                                                                                            
-source activate bh_demo                                                                                                        
+source activate workflow_env                                                                                                        
 pip install https://github.com/satra/prov/archive/enh/rdf-1.x.zip

@@ -14,7 +14,7 @@ dependencies:
     - echo 'export PATH=~/miniconda2/bin:$PATH' >> $HOME/.profile
     - source $HOME/.profile; conda config --add channels conda-forge
     - source $HOME/.profile; conda env create -f environment.yml
-    - echo 'source activate bh_demo' >> $HOME/.profile
+    - echo 'source activate workflow_env' >> $HOME/.profile
     - source $HOME/.profile; pip install https://github.com/satra/prov/archive/enh/rdf-1.x.zip
 
 machine:
@@ -30,6 +30,6 @@ test:
 general:
   artifacts:
     - "~/log.txt"
-    - "~/simple_workflow/ActualOutput.csv"
-    - "~/simple_workflow/Difference.csv"
-    - "~/simple_workflow/ExpectedOutput.csv"
+    - "~/workflow_challenge/ActualOutput.csv"
+    - "~/workflow_challenge/Difference.csv"
+    - "~/workflow_challenge/ExpectedOutput.csv"
