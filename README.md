@@ -4,7 +4,7 @@ Integration testing: [![CircleCI](https://circleci.com/gh/agt24/workflow_challen
 
 This code base was written to demonstrate a reproducible workflow. The script downloads some MRI data from a shared data repository, performs some processing, then compares the output against a set of reference files to determine if the output matches.
 
-For the purpose of this exercise, we've broken the code such that integration testing fails (as indicated by the badge on this page).  Your task is to troubleshoot the workflow to find the bug and try to fix it. Generate a passed circleci build (which should turn the badge above from red to green). Ideally this passed build would be using your own circleci account in a forked repository, but an easier way would be to push the fix directly to the master branch in this repo. Remember we're interested equally in your approach and your process as much or more than getting to the solution. Please log your approach and your process in the google doc.
+For the purpose of this exercise, we've broken the code such that integration testing fails (as indicated by the badge on this page).  Your task is to troubleshoot the workflow to find the bug and fix it. Additionally, generate a passed circleci build (which should turn the badge above from red to green). Ideally this passed build would be using your own circleci account in a github repository forked from this one, but an easier way would be to push the fix directly to the master branch in this repo. Remember we're interested equally in your approach and your process as much or more than getting to the solution. Please log your approach and your process in the google doc.
 
 
 
@@ -20,23 +20,18 @@ python run_demo_workflow.py --key 11an55u9t2TAf0EV2pHN0vOd8Ww2Gie-tHp9xGULh_dA -
 #### Prerequisites
 1. Make sure FSL is available in your environment and accessible from the command line.
 
-2. If you already have a `conda` environment, please follow the detailed steps below. 
+2. 
 
-3. 
-    
-a) If you do not have a conda environment, the following step will download and install a Python 2 conda environment with the appropriate python packages. 
+a) If you do not have conda in your environment (an installation of miniconda or Anaconda), the following step should download and install a Python 2 conda environment with the appropriate python packages. Otherwise follow the steps outlined in b.
 
 ```bash
 curl -Ok https://raw.githubusercontent.com/agt24/workflow_challenge/master/Simple_Prep.sh
 source Simple_Prep.sh
 ```
 
-or
-
-b) Do the following:
 
 
-Install miniconda if you do not have it.
+b) First install miniconda:
 
 For Linux:
 
