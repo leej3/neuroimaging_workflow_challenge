@@ -18,7 +18,7 @@ python run_demo_workflow.py --key 11an55u9t2TAf0EV2pHN0vOd8Ww2Gie-tHp9xGULh_dA -
 ```
 
 #### Prerequisites
-1. Make sure FSL is available in your environment and accessible from the command line.
+1. Make sure FSL is available in your environment and accessible from the command line (the [neurodebian](http://neuro.debian.net/vm.html) vm has this)
 
 2. 
 
