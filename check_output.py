@@ -16,7 +16,7 @@ if len(output_files) != len(expected_files):
 
 outputmap = {0: 'voxels', 1: 'volume'}
 
-df = pd.DataFrame()
+df = pandas.DataFrame()
 for filename in expected_files:
     with open(filename, 'rt') as fp:
         in_dict = json.load(fp)
@@ -28,10 +28,10 @@ for filename in expected_files:
                     in_dict_mod["%s_%s" % (k, outputmap[idx])] = value
             else:
                 in_dict_mod[k] = v
-        df[subject] = pd.Series(in_dict_mod)
+        df[subject] = pandas.Series(in_dict_mod)
 df = df.T
 
-df_out = pd.DataFrame()
+df_out = pandas.DataFrame()
 for filename in output_files:
     with open(filename, 'rt') as fp:
         in_dict = json.load(fp)
@@ -43,7 +43,7 @@ for filename in output_files:
                     in_dict_mod["%s_%s" % (k, outputmap[idx])] = value
             else:
                 in_dict_mod[k] = v
-        df_out[subject] = pd.Series(in_dict_mod)
+        df_out[subject] = pandas.Series(in_dict_mod)
 df_out = df_out.T
 
 df.to_csv('ExpectedOutput.csv')
